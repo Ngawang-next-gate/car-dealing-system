@@ -1,0 +1,77 @@
+<!-- /pages/vehicle-details.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Dealership - Vehicle Details</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <!-- /partials/header.html -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="listings.html">Vehicles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="login-link"><a href="login.html">Login</a></li>
+          <li id="register-link"><a href="register.html">Register</a></li>
+          <li id="admin-link" style="display: none">
+            <a href="admin-dashboard.html">Admin Dashboard</a>
+          </li>
+          <li id="logout-link" style="display: none">
+            <button id="logout-button">Logout</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Section -->
+    <main class="vehicle-details">
+      <section class="car-info">
+        <img alt="Car Image" id="car-image" />
+        <div class="car-description">
+          <h1 id="car-title">Car Make and Model</h1>
+          <p id="car-price">Price: $XX,XXX</p>
+          <p id="car-year">Year: YYYY</p>
+        </div>
+      </section>
+
+      <section class="purchase-form">
+        <h2>Purchase Form</h2>
+        <form id="purchase-form">
+          <label for="buyer-name">Name:</label>
+          <input type="text" id="buyer-name" required />
+
+          <label for="buyer-email">Email:</label>
+          <input type="email" id="buyer-email" required />
+
+          <button type="submit">Purchase</button>
+        </form>
+      </section>
+
+      <section class="inquiry-form">
+        <h2>Inquiry Form</h2>
+        <form id="inquiry-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" rows="4" required></textarea>
+
+          <button type="submit">Submit Inquiry</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Load auth.js first -->
+    <script src="../assets/js/auth.js"></script>
+    <!-- Load details.js second -->
+    <script src="../assets/js/details.js"></script>
+  </body>
+</html>

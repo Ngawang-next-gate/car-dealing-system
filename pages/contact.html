@@ -1,0 +1,59 @@
+<!-- /pages/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Dealership - Contact Us</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <!-- /partials/header.html -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="listings.html">Vehicles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="login-link"><a href="login.html">Login</a></li>
+          <li id="register-link"><a href="register.html">Register</a></li>
+          <li id="admin-link" style="display: none">
+            <a href="admin-dashboard.html">Admin Dashboard</a>
+          </li>
+          <li id="logout-link" style="display: none">
+            <button id="logout-button">Logout</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Section -->
+    <main class="contact-us">
+      <h1>Contact Us</h1>
+      <p>
+        If you have any questions or inquiries, please fill out the form below:
+      </p>
+
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h2>Our Contact Information</h2>
+        <p>Email: support@cardealership.com</p>
+        <p>Phone: +1 (234) 567-890</p>
+      </div>
+    </main>
+    <script src="../assets/js/auth.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!-- /pages/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Dealership - Home</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <!-- /partials/header.html -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="listings.html">Vehicles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="login-link"><a href="login.html">Login</a></li>
+          <li id="register-link"><a href="register.html">Register</a></li>
+          <li id="admin-link" style="display: none">
+            <a href="admin-dashboard.html">Admin Dashboard</a>
+          </li>
+          <li id="logout-link" style="display: none">
+            <button id="logout-button">Logout</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Section -->
+    <main class="home-content">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to the Car Dealership</h1>
+          <p>Your trusted source for high-quality, second-hand cars.</p>
+          <div class="hero-buttons">
+            <a href="listings.html" class="btn">View Vehicles</a>
+            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features">
+        <h2>Our Key Features</h2>
+        <div class="feature-cards">
+          <div class="card">
+            <h3>Inventory Management</h3>
+            <p>Easily browse and manage available cars.</p>
+          </div>
+          <div class="card">
+            <h3>Customer Registration</h3>
+            <p>Register to create an account and access more services.</p>
+          </div>
+          <div class="card">
+            <h3>Sales Tracking</h3>
+            <p>Track all your sales and manage customer interactions.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../assets/js/auth.js"></script>
+  </body>
+</html>

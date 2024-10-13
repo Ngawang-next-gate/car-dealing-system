@@ -1,0 +1,70 @@
+<!-- /pages/register.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Dealership - Register</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <!-- /partials/header.html -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="listings.html">Vehicles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="login-link"><a href="login.html">Login</a></li>
+          <li id="register-link"><a href="register.html">Register</a></li>
+          <li id="admin-link" style="display: none">
+            <a href="admin-dashboard.html">Admin Dashboard</a>
+          </li>
+          <li id="logout-link" style="display: none">
+            <button id="logout-button">Logout</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Section -->
+    <main class="register">
+      <h1>Register</h1>
+      <form id="register-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required />
+
+        <fieldset class="role-selection">
+          <legend>Role:</legend>
+          <div class="role-option">
+            <label for="normal-user">Normal User</label>
+            <input
+              type="radio"
+              id="normal-user"
+              name="role"
+              value="normal"
+              checked
+            />
+          </div>
+          <div class="role-option">
+            <label for="dealer">Dealer</label>
+            <input type="radio" id="dealer" name="role" value="dealer" />
+          </div>
+        </fieldset>
+
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="login.html">Log in here</a></p>
+    </main>
+
+    <script src="../assets/js/auth.js"></script>
+    <!-- Include authentication logic -->
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!-- /pages/listings.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Dealership - Vehicle Listings</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <!-- Correct path to CSS -->
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <!-- /partials/header.html -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="listings.html">Vehicles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="login-link"><a href="login.html">Login</a></li>
+          <li id="register-link"><a href="register.html">Register</a></li>
+          <li id="admin-link" style="display: none">
+            <a href="admin-dashboard.html">Admin Dashboard</a>
+          </li>
+          <li id="logout-link" style="display: none">
+            <button id="logout-button">Logout</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Section -->
+    <main class="listings-content">
+      <section class="filter">
+        <h2>Available Cars</h2>
+        <div class="filter-options">
+          <input
+            type="text"
+            placeholder="Search by Make or Model"
+            id="search"
+          />
+          <select id="price-filter">
+            <option value="">Filter by Price</option>
+            <option value="low-to-high">Low to High</option>
+            <option value="high-to-low">High to Low</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="car-list">
+        <!-- Car cards will be rendered here by JavaScript -->
+      </section>
+    </main>
+
+    <!-- Include the JavaScript -->
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/auth.js"></script>
+  </body>
+</html>

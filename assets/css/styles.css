@@ -1,0 +1,577 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Font */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav ul {
+  list-style-type: none;
+  background-color: #4285f4;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Elevation */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #357ae8; /* Hover color */
+  border-radius: 4px;
+}
+
+/* Button */
+button {
+  background-color: #4285f4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Elevation */
+}
+
+button:hover {
+  background-color: #357ae8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Elevated hover effect */
+}
+
+/* Material Card */
+.card {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Material shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Elevated on hover */
+}
+
+/* Forms */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4285f4;
+  box-shadow: 0 0 8px rgba(66, 133, 244, 0.3); /* Focus effect */
+}
+
+/* Material Footer */
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  border-top: 1px solid #e0e0e0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  background-color: #4285f4;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+  background-color: white;
+  color: #4285f4;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-buttons .btn-outline {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.hero-buttons .btn:hover {
+  background-color: #357ae8;
+  color: white;
+}
+
+.features {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-cards .card {
+  background-color: white;
+  width: 30%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.feature-cards .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-cards .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-cards .card p {
+  font-size: 1rem;
+}
+
+/* styles.css */
+
+/* Listings Page Styles */
+.listings-content {
+  padding: 20px;
+}
+
+.filter {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-options input,
+.filter-options select,
+.filter-options button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filter-options button {
+  background-color: #4285f4;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-options button:hover {
+  background-color: #357ae8;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.car-card {
+  background-color: white;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.car-card h3 {
+  margin: 10px 0;
+}
+
+.car-card p {
+  margin: 5px 0;
+}
+
+/* styles.css */
+
+/* No Cars Found Message */
+.no-cars {
+  text-align: center;
+  color: #d9534f; /* Bootstrap danger color */
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+/* styles.css */
+
+/* Vehicle Details Page Styles */
+.vehicle-details {
+  padding: 20px;
+}
+
+.car-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.car-info img {
+  width: 300px; /* Adjust as necessary */
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.car-description {
+  flex: 1; /* Allow description to fill remaining space */
+}
+
+.car-description h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.car-description p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+/* Inquiry Form Styles */
+.inquiry-form {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.inquiry-form h2 {
+  margin-bottom: 20px;
+}
+
+.inquiry-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inquiry-form button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inquiry-form button:hover {
+  background-color: #357ae8;
+}
+
+/* styles.css */
+
+/* Contact Us Page Styles */
+.contact-us {
+  padding: 20px;
+}
+
+.contact-us h1 {
+  margin-bottom: 10px;
+}
+
+.contact-us p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.contact-us form {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.contact-us label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-us button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us button:hover {
+  background-color: #357ae8;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+/* styles.css */
+
+/* Common Styles for Forms */
+form {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ae8;
+}
+
+/* Specific Styles for Register Page */
+.register {
+  padding: 20px;
+}
+
+/* Specific Styles for Login Page */
+.login {
+  padding: 20px;
+}
+
+/* Contact Us Page Styles */
+.contact-us {
+  padding: 20px;
+}
+
+/* Header Styles */
+nav ul {
+  list-style-type: none;
+  background-color: #4285f4;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Elevation */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #357ae8; /* Hover color */
+  border-radius: 4px;
+}
+
+/* Other styles remain unchanged */
+
+/* styles.css */
+
+/* Register Page Styles */
+.register {
+  padding: 20px;
+}
+
+/* Role Selection Styles */
+.role-selection {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.role-selection legend {
+  font-weight: bold;
+  padding: 0 10px; /* Add space around the legend */
+}
+
+.role-option {
+  display: flex;
+  align-items: center;
+  margin: 10px 0; /* Add spacing between role options */
+
+  input {
+   width: auto;
+   margin: 0;
+  }
+  label {
+   margin: 0px 20px 0px 0px;
+  }
+}
+
+.role-option input {
+  margin-right: 5px; /* Space between radio button and label */
+}
+
+/* styles.css */
+
+/* Tab Navigation Styles */
+.tabs {
+  margin: 20px 0;
+}
+
+/* styles.css */
+
+/* Tab Navigation Styles */
+.tabs {
+  margin: 20px 0;
+}
+
+.admin-dashboard {
+  padding: 20px 50px;
+}
+
+.tab-button {
+  background-color: #7ba9f3; /* Default tab background */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Active Tab Styles */
+.tab-button.active {
+  background-color: #357ae8; /* Active tab background */
+  font-weight: bold; /* Make active tab bold */
+}
+
+/* Tab Button Hover Effect */
+.tab-button:hover {
+  background-color: #357ae8; /* Darker shade on hover */
+}
+
+/* User Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Remove space between cells */
+  margin-top: 20px; /* Add space above table */
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Add a border below each row */
+}
+
+th {
+  background-color: #f2f2f2; /* Light background for header */
+  font-weight: bold; /* Bold header text */
+}
+
+tr:hover {
+  background-color: #f5f5f5; /* Change background on row hover */
+}

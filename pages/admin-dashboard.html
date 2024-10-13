@@ -1,0 +1,117 @@
+<!-- /pages/admin-dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Dealership - Admin Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <!-- /partials/header.html -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="listings.html">Vehicles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="login-link"><a href="login.html">Login</a></li>
+          <li id="register-link"><a href="register.html">Register</a></li>
+          <li id="admin-link" style="display: none">
+            <a href="admin-dashboard.html">Admin Dashboard</a>
+          </li>
+          <li id="logout-link" style="display: none">
+            <button id="logout-button">Logout</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Section -->
+    <main class="admin-dashboard">
+      <h1>Admin Dashboard</h1>
+
+      <!-- Tab Navigation -->
+      <div class="tabs">
+        <button
+          class="tab-button"
+          id="add_car_button"
+          onclick="showTab('add-car')"
+        >
+          Add New Car
+        </button>
+        <button
+          class="tab-button"
+          id="show_user_button"
+          onclick="showTab('view-users')"
+        >
+          View Users
+        </button>
+        <button
+          class="tab-button"
+          id="sales_history_button"
+          onclick="showTab('sales-history')"
+        >
+          Sales History
+        </button>
+      </div>
+
+      <!-- Tab Content -->
+      <div id="add-car" class="tab-content">
+        <h2>Add New Car</h2>
+        <form id="add-car-form">
+          <label for="car-make">Make:</label>
+          <input type="text" id="car-make" required />
+
+          <label for="car-model">Model:</label>
+          <input type="text" id="car-model" required />
+
+          <label for="car-price">Price:</label>
+          <input type="number" id="car-price" required />
+
+          <label for="car-year">Year:</label>
+          <input type="number" id="car-year" required />
+
+          <label for="car-image">Image:</label>
+          <input type="file" id="car-image" accept="image/*" required />
+
+          <button type="submit">Add Car</button>
+        </form>
+      </div>
+
+      <div id="view-users" class="tab-content" style="display: none">
+        <h2>Registered Users</h2>
+        <table id="users-table">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody id="users-list"></tbody>
+        </table>
+      </div>
+
+      <div id="sales-history" class="tab-content" style="display: none">
+        <h2>Sales History</h2>
+        <table id="sales-table">
+          <thead>
+            <tr>
+              <th>Buyer Name</th>
+              <th>Buyer Email</th>
+              <th>Car ID</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="sales-list"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="../assets/js/admin.js"></script>
+    <script src="../assets/js/auth.js"></script>
+    <!-- Include admin logic -->
+  </body>
+</html>
